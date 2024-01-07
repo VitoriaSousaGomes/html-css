@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna dawlin</title>
     <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
         body {
             text-align: center;
-            background-image: url(imagens/fundo.jpg);
+            background-color: black;
+            background-image: url(imagens/anna-fundo.png);
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            overflow:hidden;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -17,16 +26,27 @@
             padding-top: 100px;
         }
 
-        input.caixa {
+        p {
+            font-size: 22px;
+        }
+
+        input {
+            border: 0;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        input[type="submit"] {
+            background: red;
             color: white;
         }
     </style>
 </head>
 <body>
-    <img src="imagens/perfil.png" alt="anna" width="330px" height="230px">
+    <img src="imagens/anna.png" alt="anna">
     <h1> Anna dowlin</h1>
     <p>Olá sou Anna Dowlin, uma marqueteira de Nova York.</p>
-    <input type="email" placeholder="seu e-mail" id="caixa">
+    <input type="email" placeholder="seu e-mail">
     <input type="submit">
 </body>
 </html>
