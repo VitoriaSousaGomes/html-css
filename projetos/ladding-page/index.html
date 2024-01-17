@@ -78,23 +78,25 @@
             text-align: justify;
         }
         
-        .logos {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
         ul {
-            padding: 0px;
+            padding-left: 0px;
+            margin: 0px;
         }
 
         li {
+            text-align: left;
             display: inline-block;
-            text-align: center;
-            padding-left: 0px;
-            padding-right: 88px;
             list-style-type: none;
+            margin: 0px;
+            padding: 0px 100px 0px 0px;
+        }
+
+        #ultima {
+            padding-right: 0px;
+        }
+
+        div.guias {
+            display: inline-block;
         }
 
     </style>
@@ -117,14 +119,22 @@
 </section>
 <section class="logos">
     <ul>
-        <li><img src="Logos/Walmart.svg" alt="Walmart"></li>
+        <li id="primeira"><img src="Logos/Walmart.svg" alt="Walmart"></li>
         <li><img src="Logos/JP Morgan.svg" alt="morgan"></li>
         <li><img src="Logos/Visa.svg" alt="visa"></li>
         <li><img src="Logos/Tinder.svg" alt="tinder"></li>
         <li><img src="Logos/Samsung.svg" alt="samsung"></li>
-        <li><img src="Logos/Verizon.svg" alt="verizon"></li>
+        <li id="ultima" ><img src="Logos/Verizon.svg" alt="verizon"></li>
     </ul>
 </section>
 </div>
+<section>
+    <div class="guias">
+        <img src="Spense.png" alt="guia1">
+    </div>
+    <div class="guias">
+        <img src="YelpCamp.png" alt="guia2">
+    </div>
+</section>
 </body>
 </html>
