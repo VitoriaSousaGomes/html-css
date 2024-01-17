@@ -15,9 +15,12 @@
             background-color: black;
             color: white;
             font-family: 'Quattrocento', serif;
+            margin: 0px;
+        }
+        
+        header {
             padding: 0px 60px;
         }
-
         header  h1 {
             font-size: 1em;
             text-align: left;
@@ -53,13 +56,14 @@
             text-align: center;
             background-color: yellow;
             border: 15px solid yellow;
-            padding: 4px;
+            padding-left: 0px;
 
         }
 
         .texto1 {
-            height: 300px;
+            height: 280px;
             width: 708px;
+            padding: 0px 60px;
             }
 
         .texto1 > h1 {
@@ -78,25 +82,49 @@
             text-align: justify;
         }
         
+        section.logos{
+            padding-bottom: 30px;
+        }
+
         ul {
-            padding-left: 0px;
-            margin: 0px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 60px;
         }
 
-        li {
-            text-align: left;
-            display: inline-block;
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px 100px 0px 0px;
+        ul  h1 { 
+            font-size: 2.4em;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: solid;
+            margin-bottom: 0px;
+        }
+        ul  p {
+            width: 550px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.63);
+            text-align: justify;
+            margin-top: 6px;
         }
 
-        #ultima {
-            padding-right: 0px;
+        section.fundo{
+            background-color: rgb(80, 76, 76);
+        }
+        section.fundo >  ul > li > h1 {
+            margin-top: 20px;
+            margin-bottom: 15px;
         }
 
-        div.guias {
-            display: inline-block;
+        .fundo li p {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.63);
+            text-align: justify;
+        }
+        
+        li#guia2t {
+            padding-top: 28px;
         }
 
     </style>
@@ -119,22 +147,40 @@
 </section>
 <section class="logos">
     <ul>
-        <li id="primeira"><img src="Logos/Walmart.svg" alt="Walmart"></li>
+        <li><img src="Logos/Walmart.svg" alt="Walmart"></li>
         <li><img src="Logos/JP Morgan.svg" alt="morgan"></li>
         <li><img src="Logos/Visa.svg" alt="visa"></li>
         <li><img src="Logos/Tinder.svg" alt="tinder"></li>
         <li><img src="Logos/Samsung.svg" alt="samsung"></li>
-        <li id="ultima" ><img src="Logos/Verizon.svg" alt="verizon"></li>
+        <li><img src="Logos/Verizon.svg" alt="verizon"></li>
     </ul>
 </section>
 </div>
 <section>
-    <div class="guias">
-        <img src="Spense.png" alt="guia1">
-    </div>
-    <div class="guias">
-        <img src="YelpCamp.png" alt="guia2">
-    </div>
+    <ul>
+        <li><img src="Spense.png" alt="guia1" width="550px">
+        <h1>Spense.com</h1>
+        <p>Repense a forma com os escritores são pagos, uma plataforma de código aberto projetada para ajudar os escritores a se conectarem mais na escrita e menos em quando e como serão pagos. projeto em colaboração com a Codewell.cc</p></li>
+        <li><img src="YelpCamp.png" alt="guia2" width="550px">
+        <h1>YelpCamp.com</h1>
+        <p>Permitindo que viajantes mochileiros planejem perfeitamente sua viagem por meio de uma plataforma de código aberto semelhante ao TripAdvisor, com mais de 1 milhão de MAU, o YelpCamp foi o favorito do público em 2021</li>
+    </ul>
+        
+</section>
+<section class="fundo">
+        <ul>
+            <li>
+                <h1>Cofundador de uma das maiores</h1>
+                <p>A experiência combinada que tenho trabalhando nas principais empresas da fortune 500 me permitiu denselvover um conjunto de habilidades que me ajuda não apenas no densenvolvimento, mas em todos os aspectos de qualquer negócio.</p>
+                <p>Tenho orgulho de anunciar que agora estou trabalhando em uma das maiores comunidades do mundo, ensinando jovens mentes sobre como vender como desenvolvedor e abri-los para um novo mundo de oportunidades.</p>
+            </li>
+            <li id="guia2t">
+                <p>Como densenvoldver, você tem tudo bem avaliado para você que está predendo você a você mesmo.</p>
+                <p>Uma citação que descrevo ilustra perfeitamente o que quero dizer.</p>
+                <p>"Quão grande você sonharia, se soubesse que você já passou pelas partes mais difíceis? como densenvolvedor, é hora de elevar suas fotos e apostar em algo pelo qual você é apaixonado.</p>
+                <p>Fico feliz em conversar durante um café sobre foue, posso sua companhia.</p>
+            </li>
+        </ul>
 </section>
 </body>
 </html>
