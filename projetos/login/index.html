@@ -10,6 +10,11 @@
         padding: 0px;
     }
 
+        html, body {
+            width: 100vw;
+            height: 100vh;
+        }
+
         body {
             text-align: center;
             background-color: black;
@@ -32,11 +37,13 @@
 
         input {
             border: 0;
-            padding: 10px;
+            padding: 8px;
             font-size: 18px;
         }
 
-        input[type="submit"] {
+        button {
+            width: 50px;
+            height: 35px;
             background: red;
             color: white;
         }
@@ -46,7 +53,7 @@
     <img src="imagens/anna.png" alt="anna">
     <h1> Anna dowlin</h1>
     <p>Olá sou Anna Dowlin, uma marqueteira de Nova York.</p>
-    <input type="email" placeholder="seu e-mail">
-    <input type="submit">
+    <input type="email" placeholder="seu e-mail" required>
+    <button>Enviar</button>
 </body>
 </html>
