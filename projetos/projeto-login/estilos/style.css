@@ -61,6 +61,64 @@ div#formulario {
     margin-bottom: 10px;
 }
 
+div#formulario > h1 {
+    color: #255C99;
+}
+
 div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > div.campo {
+    background-color: #7EA3CC;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 1px;
+    margin-top: 5px;
+    background-color: #255C99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #0b3c74;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    margin-top: 5px;
+    background-color: white;
+    color: #0b3c74;
+    border: 1px solid #0b3c74;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #7EA3CC;
+}
+
+form > a.botao > i {
     font-size: 0.8em;
 }
