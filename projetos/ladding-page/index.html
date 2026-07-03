@@ -4,65 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ladding page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <header>
-            <div class="caixa">
-                <h1>Johnathan speeter</h1>
-                <nav>
-                    <a href="#">Artigos</a>
-                    <a href="#">Chats</a>
-                    <a href="#">Prêmios</a>
-                    <a href="#" >Sobre</a>
-                    <button id="meulink">Entrar em contato</button>
-                </nav>
+            <div class="menu">
+                <div class="header-topo">
+                    <h1>Johnathan speeter</h1>
+                    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+                </div>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="#">Artigos</a></li>
+                        <li><a href="#">Chats</a></li>
+                        <li><a href="#">Prêmios</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Entrar em contato</a></li>
+                    </ul>
+                </menu>
+            </div>
     </header>
-<section class="texto1">
-    <h1>Ajudando empresas a criar<br> software, melhor e escalável.</h1>
-    <p>Desenvolvedor web e autor premiado, com mais de 15 anos de experiência de trabalho em empresas de Fortune 500, como apple Goolgle, Facebook e muito mais</p>
-</section>
-<section class="logos">
-        <div><img src="Logos/Walmart.svg" alt="Walmart"></div>
-        <div><img src="Logos/JP Morgan.svg" alt="morgan"></div>
-        <div><img src="Logos/Visa.svg" alt="visa"></div>
-        <div><img src="Logos/Tinder.svg" alt="tinder"></div>
-        <div><img src="Logos/Samsung.svg" alt="samsung"></div>
-        <div><img src="Logos/Verizon.svg" alt="verizon"></div>
-</section>
-</div>
-<section>
-    <ul>
-        <li><img src="Spense.png" alt="guia1" width="550px">
-        <h1>Spense.com</h1>
-        <p>Repense a forma com os escritores são pagos, uma plataforma de código aberto projetada para ajudar os escritores a se conectarem mais na escrita e menos em quando e como serão pagos. projeto em colaboração com a Codewell.cc</p></li>
-        <li><img src="YelpCamp.png" alt="guia2" width="550px">
-        <h1>YelpCamp.com</h1>
-        <p>Permitindo que viajantes mochileiros planejem perfeitamente sua viagem por meio de uma plataforma de código aberto semelhante ao TripAdvisor, com mais de 1 milhão de MAU, o YelpCamp foi o favorito do público em 2021</li>
-    </ul>
-        
-</section>
-<section class="fundo">
+<main>
+    <section class="banner">
+        <h1>Ajudando empresas a criar software, melhor e escalável.</h1>
+        <p>Desenvolvedor web e autor premiado, com mais de 15 anos de experiência de trabalho em empresas de Fortune 500, como apple Goolgle, Facebook e muito mais</p>
+    </section>
+    <section class="logos">
+            <img src="Logos/Walmart.svg" alt="Walmart">
+            <img src="Logos/JP Morgan.svg" alt="morgan">
+            <img src="Logos/Visa.svg" alt="visa">
+            <img src="Logos/Tinder.svg" alt="tinder">
+            <img src="Logos/Samsung.svg" alt="samsung">
+            <img src="Logos/Verizon.svg" alt="verizon">
+    </section>
+    <section class="conteudo">
         <ul>
-            <li>
-                <h1>Cofundador de uma das maiores</h1>
-                <p>A experiência combinada que tenho trabalhando nas principais empresas da fortune 500 me permitiu denselvover um conjunto de habilidades que me ajuda não apenas no densenvolvimento, mas em todos os aspectos de qualquer negócio.</p>
-                <p>Tenho orgulho de anunciar que agora estou trabalhando em uma das maiores comunidades do mundo, ensinando jovens mentes sobre como vender como desenvolvedor e abri-los para um novo mundo de oportunidades.</p>
-            </li>
-            <li id="guia2t">
-                <p>Como densenvoldver, você tem tudo bem avaliado para você que está predendo você a você mesmo.</p>
-                <p>Uma citação que descrevo ilustra perfeitamente o que quero dizer.</p>
-                <p>"Quão grande você sonharia, se soubesse que você já passou pelas partes mais difíceis? como densenvolvedor, é hora de elevar suas fotos e apostar em algo pelo qual você é apaixonado.</p>
-                <p>Fico feliz em conversar durante um café sobre foue, posso sua companhia.</p>
-            </li>
+            <li><img src="Spense.png" alt="guia1" width="550px">
+            <h1>Spense.com</h1>
+            <p>Repense a forma com os escritores são pagos, uma plataforma de código aberto projetada para ajudar os escritores a se conectarem mais na escrita e menos em quando e como serão pagos. projeto em colaboração com a Codewell.cc</p></li>
+            <li><img src="YelpCamp.png" alt="guia2" width="550px">
+            <h1>YelpCamp.com</h1>
+            <p>Permitindo que viajantes mochileiros planejem perfeitamente sua viagem por meio de uma plataforma de código aberto semelhante ao TripAdvisor, com mais de 1 milhão de MAU, o YelpCamp foi o favorito do público em 2021</li>
         </ul>
-</section>
-<section class="guia3">
-    <h1>Interessado em trabalhar comigo?</h1>
-    <p>Estou ativo em todas as plataformas de mídia social listadas abaixo, mas você também pode me enviar um e-mail e entrarei em contato com você dentro de 24 a 28 horas.</p>
-    <button id="meulink1">Entrar em contato</button>
-</section>
+    </section>
+    <section class="conteudo-2">
+            <ul>
+                <li>
+                    <h1>Cofundador de uma das maiores</h1>
+                    <p>A experiência combinada que tenho trabalhando nas principais empresas da fortune 500 me permitiu denselvover um conjunto de habilidades que me ajuda não apenas no densenvolvimento, mas em todos os aspectos de qualquer negócio.</p>
+                    <p>Tenho orgulho de anunciar que agora estou trabalhando em uma das maiores comunidades do mundo, ensinando jovens mentes sobre como vender como desenvolvedor e abri-los para um novo mundo de oportunidades.</p>
+                </li>
+                <li>
+                    <p>Como densenvoldver, você tem tudo bem avaliado para você que está predendo você a você mesmo.</p>
+                    <p>Uma citação que descrevo ilustra perfeitamente o que quero dizer.</p>
+                    <p>"Quão grande você sonharia, se soubesse que você já passou pelas partes mais difíceis? como densenvolvedor, é hora de elevar suas fotos e apostar em algo pelo qual você é apaixonado.</p>
+                    <p>Fico feliz em conversar durante um café sobre foue, posso sua companhia.</p>
+                </li>
+            </ul>
+    </section>
+    <section class="guia3">
+        <h1>Interessado em trabalhar comigo?</h1>
+        <p>Estou ativo em todas as plataformas de mídia social listadas abaixo, mas você também pode me enviar um e-mail e entrarei em contato com você dentro de 24 a 28 horas.</p>
+        <button id="meulink1">Entrar em contato</button>
+    </section>
+</main>
 <footer>
     <div class="final">
         <h1>Johnathan speeter</h1>
@@ -73,5 +80,14 @@
         </div>
     </div>
 </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
