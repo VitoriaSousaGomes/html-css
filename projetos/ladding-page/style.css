@@ -272,6 +272,10 @@ menu ul li a:hover {
         white-space: nowrap;
     }
 
+    .banner {
+        padding: 20px 50px;
+    }
+
     .banner h1 {
         font-size: 1.9em;
     }
@@ -281,7 +285,11 @@ menu ul li a:hover {
     }
 
     .logos {
-        padding-top: 60px;
+        padding-top: 10px;
+    }
+
+    .conteudo ul {
+        padding: 10px 40px;
     }
 
     .conteudo li h1 {
@@ -294,6 +302,10 @@ menu ul li a:hover {
         padding-bottom: 20px;
     }
 
+    .conteudo-2 ul {
+        padding: 10px 40px;
+    }
+
     .conteudo-2 li h1 {
     font-size: 1.9em;
     }
@@ -304,7 +316,7 @@ menu ul li a:hover {
     }
 
     .guia3 {
-    padding: 40px 20px;
+    padding: 40px 40px;
     }
 
     .guia3 h1 {
@@ -408,7 +420,7 @@ menu ul li a:hover {
     }
 
     .conteudo img {
-        width: 640px;
+        width: 500px;
     }
 
     .conteudo li p {
@@ -421,12 +433,10 @@ menu ul li a:hover {
         display: flex;
         justify-content: space-between;
         padding: 20px 40px;
-        margin-bottom: 10px;
     }
 
-    .conteudo-2 ul h1 { 
-        font-size: 2.4em;
-        margin-bottom: 0px;
+    .conteudo-2 li {
+        max-width: 510px;
     }
 
     .conteudo-2 li p {
