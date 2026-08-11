@@ -5,3 +5,6 @@
 <a href="https://vitoriasousagomes.github.io/html-css/exercicios/ex001/"> Acesso ao exercício 001</a>
 
 <a href="https://vitoriasousagomes.github.io/html-css/projetos/ladding-page/index.html"> Acesso ao projeto <strong>Landing page</strong> </a>
+
+
+<a href="https://vitoriasousagomes.github.io/html-css/projetos/page/index.html"> Acesso ao projeto <strong>Blog</strong> </a>
