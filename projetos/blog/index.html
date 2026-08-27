@@ -7,6 +7,26 @@
     <link href="/style
     .css" rel="stylesheet">
     <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif
+        }
+
+        html, body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        body {
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #1a0f0f;
+            color: #ffffff;
+        }
+
         header {
             background-image: url("https://dash.ga.co/assets/jeff-bg.png");
             background-position: center;
@@ -17,6 +37,7 @@
 
         a {
             color: white;
+            text-decoration: none;
         }
 
         h1 {
@@ -30,6 +51,7 @@
         }
 
         ul {
+            margin: 10px 0;
             padding: 10px;
             background-color: rgba(0, 0, 0, 0.5);
         }
@@ -38,11 +60,50 @@
             padding: 0px 10px 0px 10px;
         }
 
+        header ul li a {
+            
+        }
+
+        .conteudo {
+            background: linear-gradient(to bottom, #3a1c1c, #1a0f0f);
+        }
+
         article {
             width: 500px;
             max-width: 500px;
             padding: 20px;
             margin: 0 auto;
+        }
+        article h2 {
+            color: white;
+        }
+
+        article p {
+            font-size: 15px;
+            font-weight: 100;
+            color: rgb(220, 220, 220);
+        }
+
+        button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            margin-top: 10px;
+            width: 100%;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            border: 1px solid rgb(150, 150, 150);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffffff;
+            color: #1a0f0f;
+            transition: color, background-color 0.8s;
         }
 
         @media (max-width: 500px) {
@@ -67,24 +128,26 @@
             <li><a href="#">Piores poemas</a></li>
         </ul>
     </header>
-    <article>
-        <h2>VHS umami pop-up trust fund</h2>
-        <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
-        <button>Like </button>
-    </article>
-    <article>
-        <h2>Sartorial synth Echo Park, roof party</h2>
-        <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
-        <button>Like </button>
-    </article>
-    <article>
-        <h2>Forage food truck keytar master cleanse</h2>
-        <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
-        <button>Like </button>
-    </article>
+    <div class="conteudo">
+        <article>
+            <h2>VHS umami pop-up trust fund</h2>
+            <p>Marfa church-key kitsch bicycle rights, 8-bit mixtape cardigan gentrify Echo Park. Street art swag brunch, next level roof party Schlitz hella organic keffiyeh selfies. You probably haven't heard of them polaroid hashtag +1, meggings biodiesel Portland High Life cray tumblr retro.</p>
+            <button>Like </button>
+        </article>
+        <article>
+            <h2>Sartorial synth Echo Park, roof party</h2>
+            <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
+            <button>Like </button>
+        </article>
+        <article>
+            <h2>Forage food truck keytar master cleanse</h2>
+            <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+            <button>Like </button>
+        </article>
+    </div>
     <script>
         $("button").on("click", function() {
-          alert("o botão foi clicado!")
+            alert("o botão foi clicado!")
         });
     </script>
 </body>
