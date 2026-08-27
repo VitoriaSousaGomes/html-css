@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>My Blogger</title>
 
     <style>
         * {
@@ -57,6 +57,8 @@
         nav li {
             display: flex;
             justify-content: center;
+            background-color: #dcdbdb;
+            border: 4px solid rgb(206, 205, 205);
         }
 
         nav ul li a {
@@ -70,16 +72,8 @@
         }
 
         nav ul li a:hover {
-            color: #3581e5;
-            transition: 0.2s;
-        }
-
-        li:nth-child(odd) {
-            background-color: #dcdbdb;
-        }
-
-        li:nth-child(even) {
-            background-color: #d1d1d1;
+            color: #2F4E70;
+            transition: color 0.5s ;
         }
 
         .navbar {
@@ -133,7 +127,8 @@
         }
 
         #home {
-            background-image: linear-gradient(#3581E5, #a084dc);
+            background-image: linear-gradient(#2F4E70, #1E2C42);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.431);
         }
 
         div.banner {
@@ -154,14 +149,14 @@
         }
 
         #about {
-            background-color: #3581E5;
+            background-color: #2F4E70;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.431);
         }
 
         .conteudo-principal, #blog {
             justify-content: center;
             align-items: center;
             padding: 20px 50px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.431);
         }
 
         div.conteudo-principal h2 {
@@ -182,16 +177,18 @@
             border: none;
             box-shadow: 0px 0px 9px -3px rgba(0,0,0,0.49);
             font-size: 1.2em;
-            color: #3581E5;
+            color: #2F4E70;
         }
 
         div.conteudo-principal button:hover {
-            background-color: #a084dc;
+            background-color: #1E2C42;
             color: white;
+            transition: color 1.0s, background-color 0.3s;
         }
         
         #blog {
-            background-color: #a084dc;
+            background-color: #1E2C42;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.431);
         }
 
         #blog h2 {
@@ -203,7 +200,7 @@
         #blog h3 {
             font-size: 1.3em;
             padding: 10px 0 0;
-            color: #3581E5;
+            color: #1E2C42;
         }
         
         #blog p {
@@ -241,7 +238,7 @@
         }
 
         .post-card .read-more {
-            background-color: #3581E5;
+            background-color: #2F4E70;
             border-radius: 6px;
             height: 30px;
             text-decoration: none;
@@ -250,7 +247,8 @@
         }
 
         #contact {
-            background-image: linear-gradient(#3581E5, #a084dc);
+            background-image: linear-gradient(#2F4E70, #1E2C42);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.431);
         }
 
         .contato {
@@ -259,7 +257,6 @@
             justify-content: center;
             align-items: center;
             padding: 20px 50px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.431);
         }
 
         #contact h2 {
@@ -306,7 +303,7 @@
         }
 
         div.form-contact form input[type="submit"] {
-            background-color: #3581E5;
+            background-color: #2F4E70;
             color: white;
             border-radius: 10px;
             height: 30px;
@@ -330,7 +327,6 @@
 
         @media (min-width: 768px) {
 
-
             nav {
                 justify-content: center;
                 align-items: center;
@@ -352,9 +348,21 @@
                 justify-content: center;
                 align-items: center;
                 gap: 10px;
-                background-color: #d1d1d1;
+                background-color: transparent;
             }
 
+            nav li {
+                background-color: transparent;
+                border: none;
+            }
+
+            .pages {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
             div.banner p {
                 font-size: 1.5em;
